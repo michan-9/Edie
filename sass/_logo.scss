@@ -1,0 +1,12 @@
+/* LOGO */
+
+.logo,
+.logo:link,
+.logo:visited {
+  font-family: var(--font-secondary);
+  font-weight: 800;
+  font-size: var(--xl);
+  line-height: 5.3rem;
+  text-decoration: none;
+  color: var(--color-primary);
+}

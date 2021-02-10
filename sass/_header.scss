@@ -1,0 +1,111 @@
+.header {
+  padding: 5rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 1rem;
+  }
+
+  /* NAVIGATION */
+
+  &__nav {
+    //position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* NAVIGATION ITEMS */
+
+  /* THIS NAVIGATION IS ONLY FOR DESKTOP, MOBILE NAV IS INSIDE NAVIGATION FILE */
+
+  &__list {
+    list-style: none;
+    display: flex;
+
+    /* HIDDING THE NAV AT 800PX */
+
+    @media only screen and (max-width: $bp-large) {
+      display: none;
+    }
+
+    & > *:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+
+  &__item:link,
+  &__item:visited {
+    font-weight: 500;
+    font-size: var(--l);
+    line-height: 3.6rem;
+    text-decoration: none;
+    color: currentColor;
+  }
+
+  /* HERO BOX */
+
+  &__hero {
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns:
+      [full-start] 0.9fr repeat(2, [col-start] 1.1fr [col-end])
+      0.9fr [full-end];
+
+    /* ADJUSTING THE SPACE BETWEEN COLUMNS */
+
+    @media only screen and (max-width: $bp-largest) {
+      grid-template-columns:
+        [full-start] minmax(25px, 0.9fr) repeat(2, [col-start] 1.5fr [col-end])
+        minmax(25px, 0.5fr) [full-end];
+    }
+
+    /* ADJUSTING THE SPACE BETWEEN COLUMNS */
+
+    @media only screen and (max-width: $bp-medium) {
+      margin-top: 5rem;
+      grid-template-columns:
+        [full-start] minmax(25px, 0.5fr) repeat(2, [col-start] 2fr [col-end])
+        minmax(25px, 0.5fr) [full-end];
+    }
+
+    /* SPACE BETWEEN ITEMS, I WILL USE MARGIN INSTEAD GAP BECAUSE (SPAN__TEXT) HAD A DIFFERENT SPACE */
+
+    & :not(:first-child):not(:last-child) {
+      margin-bottom: 4rem;
+    }
+
+    //////////////////////////
+  }
+
+  /* THIS IS ONLY FOR LAYOUT(GRID), IF YOU WANT TO SEE THE STYLE OF HEADINGS PLEASE MOVE TO TYPOGRAPHY, FORM FOR FORM(?)*/
+
+  .heading-1,
+  .heading-5 {
+    grid-column: col-start 1 / col-end 2;
+  }
+
+  .heading-2,
+  &__paragraph,
+  .form {
+    grid-column: col-start 1 / col-end 1;
+
+    @media only screen and (max-width: $bp-large) {
+      grid-column: col-start 1 / col-end 2;
+    }
+  }
+
+  //////////////////////////
+
+  &__img {
+    width: 100%;
+    border-radius: 18px;
+    grid-column: full-start / full-end;
+  }
+
+  /* MOVE TO TYPOGRAPHY FOR MORE INFO ABOUT THIS CLASS IN GENERAL*/
+
+  &__paragraph {
+    font-size: var(--l);
+    line-height: 2.7rem;
+  }
+}

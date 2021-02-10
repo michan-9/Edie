@@ -1,0 +1,38 @@
+/* SASSS VARIABLES */
+
+// RESPONSIVE BREAKPONTS
+
+$bp-largest: 68.75em; // 1100px/16px(font-root)
+$bp-large: 50em; // 800px
+$bp-medium: 37.5em; // 600px
+$bp-small: 31.25em; // 500px
+
+/* BASIC RESET */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 50%;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 62.5%;
+  }
+}
+
+.container {
+  font-family: var(--font-primary);
+  color: var(--color-primary);
+  position: relative;
+  z-index: 1;
+}

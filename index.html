@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Montserrat:wght@600&family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Edie Homepage</title>
+  </head>
+  <body class="container">
+    <!-- MOBILE NAVIGATION -->
+    <nav class="navigation">
+      <label class="navigation__label">
+        <input
+          type="checkbox"
+          name="navi"
+          id="navi"
+          class="navigation__checkbox"
+        />
+        <label for="navi" class="navigation__icon"></label>
+
+        <div class="navigation__background">&nbsp;</div>
+
+        <ul class="navigation__list">
+          <li><a href="#home" class="navigation__item">Home</a></li>
+          <li><a href="#services" class="navigation__item">Services</a></li>
+          <li><a href="#works" class="navigation__item">Our Works</a></li>
+          <li><a href="#clients" class="navigation__item">Clients</a></li>
+          <li><a href="#contact" class="navigation__item">Contact</a></li>
+        </ul>
+      </label>
+    </nav>
+
+    <header class="header" id="home">
+      <div class="header__nav">
+        <a href="#home" class="logo">Edie</a>
+
+        <!-- DESKTOP NAVIGATION -->
+
+        <ul class="header__list">
+          <li><a href="#home" class="header__item">Home</a></li>
+          <li><a href="#services" class="header__item">Services</a></li>
+          <li><a href="#works" class="header__item">Our Works</a></li>
+          <li><a href="#clients" class="header__item">Clients</a></li>
+          <li><a href="#contact" class="header__item">Contact</a></li>
+        </ul>
+      </div>
+      <div class="header__hero">
+        <h5 class="heading-5 bmbot ftgreen">Unhappy with your website?</h5>
+        <h1 class="heading-1">
+          We create beautiful <span class="block">and fast web services</span>
+        </h1>
+        <img src="img/heroImage.jpg" alt="Hero img" class="header__img" />
+        <h2 class="heading-2">Story, emotion and purpose</h2>
+        <p class="header__paragraph paragraph ftxsmall">
+          We help transform your ideas into real world applications that will
+          outperform your toughest competition and help you achieve your
+          strategic goals in short period of time.
+        </p>
+        <form action="#" class="form">
+          <label for="email" class="form__label">Want us to contact you?</label>
+          <div class="form__wrapper">
+            <input
+              type="email"
+              name="uemail"
+              id="email"
+              placeholder="Email"
+              class="form__input"
+            />
+            <input type="submit" value="Join" class="form__button" />
+          </div>
+        </form>
+      </div>
+    </header>
+    <main class="main">
+      <section class="features" id="services">
+        <h3 class="heading-3 lmargin">
+          We offer high <span class="block">demand services</span>
+        </h3>
+        <div class="features__wrapper">
+          <div class="features__card">
+            <div class="features__wrapper-icon bkgreen">
+              <svg class="features__icon">
+                <use href="img/sprite.svg#create-white-18dp"></use>
+              </svg>
+            </div>
+
+            <h4 class="heading-4 bold">UI/UX Design</h4>
+            <p class="features__paragraph paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+              metus ac nulla consequat aliquet id quis turpis.
+            </p>
+            <a href="#" class="btn btn--green">Get started</a>
+          </div>
+          <div class="features__card">
+            <div class="features__wrapper-icon bkblue">
+              <svg class="features__icon">
+                <use href="img/sprite.svg#code-white-18dp"></use>
+              </svg>
+            </div>
+
+            <h4 class="heading-4 bold">Front End</h4>
+            <p class="features__paragraph paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+              metus ac nulla consequat aliquet id quis turpis.
+            </p>
+            <a href="#" class="btn btn--blue">Get started</a>
+          </div>
+          <div class="features__card">
+            <div class="features__wrapper-icon bkred">
+              <svg class="features__icon">
+                <use href="img/sprite.svg#create-white-18dp"></use>
+              </svg>
+            </div>
+
+            <h4 class="heading-4 bold">Back End</h4>
+            <p class="features__paragraph paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+              metus ac nulla consequat aliquet id quis turpis.
+            </p>
+            <a href="#" class="btn btn--red">Get started</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="services" id="works">
+        <h3 class="heading-3 heading-3--grid lmargin">
+          Good design means <span class="block">good business</span>
+        </h3>
+        <figure class="services__figure services__figure--1">
+          <img
+            src="img/smarthome.jpg"
+            alt="Smarthome service"
+            class="services__img"
+          />
+          <figcaption class="services__caption">
+            Full stack application
+          </figcaption>
+          <h4 class="heading-4">Smart home dashboard</h4>
+        </figure>
+        <figure class="services__figure services__figure--2">
+          <img src="img/onboard.png" alt="onbard app" class="services__img" />
+          <figcaption class="services__caption">UX/UI design</figcaption>
+          <h4 class="heading-4">Onboard application</h4>
+        </figure>
+        <figure class="services__figure services__figure--3">
+          <img
+            src="img/booking.png"
+            alt="booking system"
+            class="services__img"
+          />
+          <figcaption class="services__caption">Mobile application</figcaption>
+          <h4 class="heading-4">Booking system</h4>
+        </figure>
+        <figure class="services__figure services__figure--4">
+          <img
+            src="img/juice-product.png"
+            alt="Juice product"
+            class="services__img"
+          />
+          <figcaption class="services__caption">
+            Front End application
+          </figcaption>
+          <h4 class="heading-4">Juice product homepage</h4>
+        </figure>
+        <a href="#" class="services__info"
+          >See more <span class="smargin">&rarr;</span></a
+        >
+      </section>
+
+      <section class="team">
+        <div class="team__wrapper">
+          <h5 class="heading-5 ftred">Meet the team</h5>
+          <h3 class="heading-3 smargin-1">
+            We are chilled<br />
+            and a laidback team
+          </h3>
+          <p class="paragraph smargin-2">
+            Lorem ipsum dolor sit amet,<br />
+            consectetur adipiscing elit.
+          </p>
+        </div>
+
+        <figure class="team__grid">
+          <img
+            src="img/person1.png"
+            alt="Person 1"
+            class="team__img team__img--1"
+          />
+          <img
+            src="img/person2.png"
+            alt="Person 2"
+            class="team__img team__img--2"
+          />
+          <img
+            src="img/person3.png"
+            alt="Person 3"
+            class="team__img team__img--3"
+          />
+        </figure>
+      </section>
+
+      <section class="review" id="clients">
+        <figure class="review__wrapper">
+          <blockquote class="heading-3 ftlarge">
+            “Fast and outstanding resutls. Edie understands their customer’s
+            needs. They have a young and talented team.”
+          </blockquote>
+          <figcaption class="review__user">
+            <img src="img/person4.png" alt="User Photo" class="review__img" />
+            <div class="review__info">
+              <p class="heading-4">Carlos Tran</p>
+              <p class="review__company">The Decorate Gatsby</p>
+            </div>
+          </figcaption>
+        </figure>
+      </section>
+    </main>
+    <footer class="footer" id="contact">
+      <div class="footer__wrapper">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li><a href="#home" class="nav__item">Home</a></li>
+            <li><a href="#services" class="nav__item">Services</a></li>
+            <li><a href="#works" class="nav__item">Our Works</a></li>
+            <li><a href="#clients" class="nav__item">Clients</a></li>
+            <li><a href="#contact" class="nav__item">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="footer__details">
+          <a href="#home" class="logo ftgrey">Edie</a>
+          <div class="footer__media">
+            <svg class="footer__icon">
+              <a href="http://instagram.com" target="_blank">
+                <use href="img/sprite.svg#instagram"></use>
+              </a>
+            </svg>
+            <svg class="footer__icon">
+              <a href="http://linkedin.com" target="_blank">
+                <use href="img/sprite.svg#linkedin"></use>
+              </a>
+            </svg>
+            <svg class="footer__icon">
+              <a href="http://twitter.com" target="_blank">
+                <use href="img/sprite.svg#twitter"></use>
+              </a>
+            </svg>
+          </div>
+        </div>
+        <form action="#" class="form">
+          <label for="femail" class="form__label"
+            >Want us to contact you?</label
+          >
+          <div class="form__wrapper">
+            <input
+              type="email"
+              name="uemail"
+              id="femail"
+              placeholder="Email"
+              class="form__input"
+            />
+            <input type="submit" value="Join" class="form__button" />
+          </div>
+        </form>
+      </div>
+      <p class="footer__copy">Mi-Chan &copy; DevChallenges.io</p>
+    </footer>
+  </body>
+</html>

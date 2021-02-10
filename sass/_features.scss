@@ -1,0 +1,117 @@
+.features {
+  padding: 16.5rem;
+
+  /* QUERIES */
+
+  @media only screen and (max-width: $bp-largest) {
+    padding: 10rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 1rem;
+    margin: 8rem 0;
+  }
+
+  /* CARDS WRAPPER */
+
+  &__wrapper {
+    display: flex;
+    margin-top: 4rem;
+
+    @media only screen and (max-width: $bp-large) {
+      flex-direction: column;
+    }
+  }
+
+  /* CARD OUTSIDE */
+
+  &__card {
+    padding: 4.5rem 3.5rem;
+    border-radius: 24px;
+    transition: box-shadow 0.2s;
+    position: relative;
+    z-index: 2;
+
+    &:not(:last-child) {
+      margin-right: 4rem;
+
+      @media only screen and (max-width: $bp-large) {
+        margin-right: 0;
+        margin-bottom: 4rem;
+      }
+    }
+
+    /* STYLES ON HOVER */
+
+    /* SHADOW */
+
+    &:hover {
+      box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+
+      /* HAND */
+
+      &::after {
+        content: "";
+        height: 8rem;
+        width: 8rem;
+        bottom: -5rem;
+        right: 0;
+        position: absolute;
+        backface-visibility: hidden;
+        background-color: rgba(70, 70, 70, 0.21);
+        -webkit-mask-image: url(../img/touch_app-white-18dp.svg);
+        -webkit-mask-size: cover;
+        mask-image: url(../img/touch_app-white-18dp.svg);
+        mask-size: cover;
+        z-index: 2;
+      }
+
+      /* SIMPLE ANIMATION ON ICONS */
+
+      & :first-child {
+        animation: rotate-vert-center 0.5s
+          cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+      }
+
+      /* COLOR CHANGE */
+
+      & .btn {
+        color: #fff;
+      }
+
+      & .btn--green {
+        background-color: var(--color-green);
+      }
+
+      & .btn--blue {
+        background-color: var(--color-sky);
+      }
+
+      & .btn--red {
+        background-color: var(--color-red);
+      }
+    }
+  }
+
+  /* CARD INSIDE */
+
+  &__wrapper-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    width: 67px;
+    height: 67px;
+    margin-bottom: 3.5rem;
+  }
+
+  &__icon {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  &__paragraph {
+    margin-top: 2.4rem;
+    margin-bottom: 3rem;
+  }
+}

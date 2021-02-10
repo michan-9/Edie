@@ -1,0 +1,79 @@
+.form {
+  &__label {
+    font-weight: 500;
+    font-size: var(--xs);
+    line-height: 2.1rem;
+    color: var(--color-grey-3);
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: var(--xxxs);
+      line-height: 1.5rem;
+    }
+  }
+
+  /* PUTTING THE BUTTON INSIDE THE INPUT */
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    margin-top: 1rem;
+    z-index: 2;
+
+    & > * {
+      font-family: var(--font-primary);
+      font-weight: 500;
+      line-height: 2.7rem;
+    }
+
+    /* NICE EFFECT ON BUTTON */
+
+    .form__input:focus + .form__button {
+      width: 30%;
+    }
+  }
+
+  &__input {
+    background: var(--color-grey-1);
+    border-radius: 12px;
+    border: none;
+    padding: 1.5rem;
+    width: 100%;
+    font-size: var(--xs);
+
+    &:focus {
+      outline: none;
+      border: 0.1rem solid var(--color-green);
+      padding: 1.4rem;
+    }
+
+    &::-webkit-input-placeholder {
+      color: var(--color-grey-6);
+      font-size: var(--m);
+
+      @media only screen and (max-width: $bp-small) {
+        font-size: var(--xs);
+      }
+    }
+  }
+
+  &__button {
+    position: absolute;
+    right: 4px;
+    align-self: center;
+    color: var(--color-grey-1);
+    font-size: var(--m);
+    border-radius: 12px;
+    border: none;
+    background-color: var(--color-green);
+    outline: none;
+    padding: 1.1rem;
+    cursor: pointer;
+    width: 40%;
+    transition: all 0.2s;
+    z-index: 2;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: var(--xs);
+    }
+  }
+}

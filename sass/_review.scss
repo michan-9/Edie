@@ -1,0 +1,63 @@
+.review {
+  padding: 0 16.5rem;
+  margin-bottom: 20rem;
+
+  /* QUERIES */
+
+  @media only screen and (max-width: $bp-largest) {
+    padding: 0 2rem;
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 1rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: var(--l);
+    margin-bottom: 10rem;
+  }
+
+  /* NOT MUCH TO EXPLAIN HERE */
+
+  &__wrapper {
+    box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+    border-radius: 24px;
+    padding: 4rem;
+
+    @media only screen and (max-width: $bp-small) {
+      padding: 0.5rem;
+    }
+  }
+
+  &__user {
+    display: flex;
+    margin-top: 5rem;
+  }
+
+  &__img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 12px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 3rem;
+
+    @media only screen and (max-width: $bp-small) {
+      margin-left: 1.5rem;
+    }
+  }
+
+  &__company {
+    font-weight: 500;
+    font-size: var(--m);
+    line-height: 2.7rem;
+    color: var(--color-grey-3);
+  }
+}

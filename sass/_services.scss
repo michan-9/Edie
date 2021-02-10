@@ -1,0 +1,101 @@
+.services {
+  padding: 0 16.5rem;
+  padding-bottom: 7rem;
+  display: grid;
+  grid-template-columns: repeat(4, [col-start] 1fr [col-end]);
+  gap: 0 2rem;
+
+  /* QUERIES */
+
+  @media only screen and (max-width: $bp-largest) {
+    padding: 0 10rem;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    grid-template-columns: [col-start] minmax(0, 1fr) [col-end];
+    gap: 3.5rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 1rem;
+  }
+
+  /* NOT FOR STYLING, JUST TO PLACING THE GRID, STYLE AT TYPOPOGRAPHY FILE */
+
+  .heading-3--grid {
+    grid-column: col-start 1 / -1;
+    grid-row: 1 / 2;
+  }
+
+  &__figure {
+    display: flex;
+    flex-direction: column;
+
+    &--1 {
+      grid-column: col-start 1 / col-end 2;
+      grid-row: 3 / span 3;
+    }
+
+    &--2 {
+      grid-column: col-start 3 / col-end 4;
+      grid-row: 2 / span 3;
+    }
+
+    &--3 {
+      grid-column: col-start 1 / col-end 2;
+      grid-row: 7 / span 3;
+    }
+
+    &--4 {
+      grid-column: col-start 3 / col-end 4;
+      grid-row: 6 / span 3;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      &--1,
+      &--2,
+      &--3,
+      &--4 {
+        grid-column: col-start 1 / col-end 1;
+        grid-row: unset;
+      }
+    }
+  }
+
+  &__img {
+    width: 100%;
+    border-radius: 12px;
+  }
+
+  &__caption {
+    font-weight: 300;
+    line-height: 2.1rem;
+    font-size: var(--s);
+    color: var(--color-grey-3);
+    margin-top: 2rem;
+  }
+
+  &__info,
+  &__info:link,
+  &__info:visited {
+    grid-column: col-start 4 / col-end 4;
+    grid-row: 9 / 10;
+    justify-self: end;
+    font-weight: 500;
+    font-size: var(--l);
+    line-height: 3.6rem;
+    color: var(--color-green);
+    text-decoration: none;
+
+    @media only screen and (max-width: $bp-large) {
+      grid-column: col-start 1 / col-end 1;
+      grid-row: unset;
+      justify-self: start;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: var(--m);
+      line-height: 2.7rem;
+    }
+  }
+}

@@ -1,0 +1,91 @@
+/* UTILITY CLASSES */
+
+/* GENERAL USE */
+
+.block {
+  display: block;
+}
+
+/* FONTS */
+
+.bold {
+  font-weight: 700;
+}
+
+/* FONT SIZE ONLY AT MOBILE  */
+
+@media only screen and (max-width: $bp-small) {
+  /* 1REM = 10PX  // IMPORTANT! CHECK THIS FIRST AT @BASE */
+
+  /* 10PX */
+  .ftxxsmall {
+    font-size: var(--xxxs);
+    line-height: 1.5rem;
+  }
+
+  /* 12PX */
+  .ftxsmall {
+    font-size: var(--xxs);
+    line-height: 1.8rem;
+  }
+}
+
+/* COLORS */
+
+/* FONTS COLORS */
+
+.ftgreen {
+  color: var(--color-green);
+}
+
+.ftblue {
+  color: var(--color-sky);
+}
+
+.ftred {
+  color: var(--color-red);
+}
+
+.ftgrey {
+  color: var(--color-grey-1) !important;
+}
+
+/* BACKGROUND COLORS */
+
+.bkgreen {
+  background-color: var(--color-green);
+}
+
+.bkblue {
+  background-color: var(--color-sky);
+}
+
+.bkred {
+  background-color: var(--color-red);
+}
+
+/* MARGINS */
+
+@media only screen and (max-width: $bp-medium) {
+  .lmargin {
+    margin-left: 3.5rem;
+  }
+}
+
+.smargin {
+  margin: 0 5px;
+}
+
+.smargin-1 {
+  margin-top: 7px;
+}
+
+.smargin-2 {
+  margin-top: 14px;
+}
+
+.bmbot {
+  margin-bottom: 1.5rem;
+}
+
+/*  */

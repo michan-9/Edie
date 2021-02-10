@@ -1,0 +1,18 @@
+.btn,
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  font-size: var(--s);
+  font-weight: 500;
+  line-height: 2.4rem;
+  color: var(--color-grey-3);
+  display: flex;
+  justify-content: center;
+  width: 116px;
+  padding: 9px 12.5px;
+  border-radius: 12px;
+  outline: none;
+  background-color: var(--color-grey-7);
+  cursor: pointer;
+  transition: all 0.4s;
+}

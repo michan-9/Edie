@@ -1,0 +1,52 @@
+%heading {
+  font-weight: 500;
+}
+
+.heading-1,
+.heading-2 {
+  @extend %heading;
+  font-size: var(--xxl);
+  line-height: 7.2rem;
+}
+
+.heading-3 {
+  @extend %heading;
+  font-size: var(--xl);
+  line-height: 5.4rem;
+}
+
+.heading-4 {
+  @extend %heading;
+  font-size: var(--l);
+  line-height: 3.6rem;
+}
+
+.heading-1,
+.heading-2,
+.heading-3,
+.heading-4 {
+  @media only screen and (max-width: $bp-small) {
+    font-size: var(--l);
+    line-height: 3.6rem;
+  }
+}
+
+.heading-5 {
+  @extend %heading;
+  font-size: var(--m);
+  line-height: 2.7rem;
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: var(--xxs);
+    line-height: 1.8rem;
+  }
+}
+
+/* BASIC PARAGRAPH */
+
+.paragraph {
+  font-weight: 400;
+  font-size: var(--s);
+  line-height: 2.4rem;
+  color: var(--color-grey-4);
+}

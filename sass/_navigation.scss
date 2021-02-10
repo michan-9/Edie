@@ -110,8 +110,6 @@
     opacity: 1;
     visibility: visible;
     width: 100%;
-    top: 25%;
-    left: 35%;
   }
 
   /* ITEMS  */
@@ -124,6 +122,11 @@
     width: 0;
     top: 0;
     left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20rem;
     transition: all 0.2s;
     z-index: 39;
 

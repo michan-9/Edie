@@ -10,7 +10,7 @@
   height: 3rem;
   display: none;
 
-  /* SHOWING THE NAV AT 800PX */
+  /* DISPLAYING THE NAV AT 800PX */
 
   @media only screen and (max-width: $bp-large) {
     display: flex;
@@ -126,7 +126,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 20rem;
+    height: 100vh;
     transition: all 0.2s;
     z-index: 39;
 
